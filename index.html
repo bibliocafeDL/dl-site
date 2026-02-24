@@ -1,84 +1,207 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<style>
-  body {
-    font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
-    background-color: #f7f5f2;
-    color: #333;
-    line-height: 1.9;
-    max-width: 820px;
-    margin: 0 auto;
-    padding: 60px 24px;
-  }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>biblio cafe DL</title>
 
-  h1 {
-    text-align: center;
-    font-weight: normal;
-    letter-spacing: 2px;
-    margin-bottom: 30px;
-  }
+  <style>
+    body {
+      font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
+      background-color: #f7f5f2;
+      color: #333;
+      line-height: 1.9;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 48px 20px;
+    }
 
-  h2 {
-    margin-top: 50px;
-    font-weight: normal;
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 6px;
-  }
+    header {
+      text-align: center;
+      margin-bottom: 28px;
+    }
 
-  p {
-    margin-bottom: 20px;
-  }
+    h1 {
+      font-weight: normal;
+      letter-spacing: 2px;
+      margin: 0 0 10px;
+    }
 
-  ul {
-    margin-left: 20px;
-  }
+    .lead {
+      margin: 0 auto;
+      max-width: 720px;
+      font-size: 1.05rem;
+    }
 
-  a {
-    color: #444;
-    text-decoration: none;
-  }
+    .cta {
+      margin-top: 18px;
+      display: inline-block;
+      border: 1px solid #444;
+      padding: 10px 16px;
+      border-radius: 8px;
+    }
+    .cta:hover { background: rgba(0,0,0,0.04); }
 
-  a:hover {
-    text-decoration: underline;
-  }
-</style>
+    section {
+      margin-top: 56px;
+    }
+
+    h2 {
+      font-weight: normal;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 6px;
+      margin: 0 0 18px;
+    }
+
+    .hero {
+      margin-top: 22px;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid rgba(0,0,0,0.08);
+      background: #fff;
+    }
+    .hero img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .caption {
+      padding: 12px 14px;
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+    @media (max-width: 820px) {
+      .grid { grid-template-columns: 1fr; }
+    }
+
+    figure {
+      margin: 0;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid rgba(0,0,0,0.08);
+      background: #fff;
+    }
+    figure img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    figcaption {
+      padding: 10px 12px;
+      font-size: 0.92rem;
+      color: #555;
+    }
+
+    ul {
+      margin: 12px 0 0 20px;
+    }
+
+    .note {
+      color: #666;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      margin-top: 70px;
+      padding-top: 18px;
+      border-top: 1px solid rgba(0,0,0,0.12);
+      color: #666;
+      font-size: 0.95rem;
+      text-align: center;
+    }
+  </style>
 </head>
+
 <body>
+  <header>
+    <h1>biblio cafe DL</h1>
+    <p class="lead">一人ひとりの「考え方」に寄り添う個別指導。<br>
+    学年や得意・不得意にとらわれない <strong>コーチング</strong> を行います。</p>
 
-  <h1>個別指導塾について</h1>
+    <a class="cta" href="/juku/">個別指導の考え方（指導方針）を見る</a>
 
-  <p>
-    学力や理解のスピード、得意な学び方は一人ひとり違います。<br>
-    biblio cafe DLでは、その違いを前提に、
-    無理のない学び方を一緒に考えていきます。
-  </p>
+    <!-- ここがトップの一番大事な写真（教室全体） -->
+    <div class="hero">
+      <img src="images/room-1.jpg" alt="教室の様子（集中して学べる落ち着いた空間）">
+      <div class="caption">落ち着いた空間で、それぞれのペースを大切にしながら学びます。</div>
+    </div>
+  </header>
 
-  <h2>指導の特徴</h2>
-  <ul>
-    <li>完全個別対応</li>
-    <li>理解のペースを大切にした学習</li>
-    <li>学習方法からサポート</li>
-    <li>落ち着いた環境での学習</li>
-  </ul>
+  <section>
+    <h2>DLのコーチング</h2>
+    <p>
+      DLでは、いわゆる「授業」ではなく <strong>コーチング</strong> という形をとっています。<br>
+      その子の理解の仕方・興味・つまずき方に合わせて、「どう考えるか」を一緒に整理し、学び方を整えていきます。
+    </p>
 
-  <h2>対象</h2>
-  <p>小学生・中学生・高校生</p>
+    <div class="grid">
+      <figure>
+        <img src="images/coaching-1.jpg" alt="ホワイトボードを使った学習の様子">
+        <figcaption>対話しながら、理解の「芯」をつかむ時間。</figcaption>
+      </figure>
+      <figure>
+        <img src="images/coaching-2.jpg" alt="少人数で学ぶ様子">
+        <figcaption>少人数だから、目が届く。置いていかない。</figcaption>
+      </figure>
+      <figure>
+        <img src="images/coaching-3.jpg" alt="テーブルで一緒に考える学習の様子">
+        <figcaption>答えだけでなく、考え方を一緒に育てます。</figcaption>
+      </figure>
+    </div>
+  </section>
 
-  <h2>こんな方におすすめです</h2>
-  <ul>
-    <li>集団授業が合わない</li>
-    <li>自分のペースで学びたい</li>
-    <li>勉強のやり方が分からない</li>
-    <li>落ち着いた環境で学習したい</li>
-  </ul>
+  <section>
+    <h2>教室の雰囲気</h2>
+    <p>
+      「塾っぽさ」が苦手な人でも大丈夫。<br>
+      気持ちが落ち着く場所で、集中できる時間を作ります。
+    </p>
 
-  <h2>お問い合わせ</h2>
-  <p>
-    体験授業・ご相談はLINEまたはメールでご連絡ください。
-  </p>
+    <div class="grid">
+      <figure>
+        <img src="images/room-2.jpg" alt="教室全体の様子">
+        <figcaption>静かに集中できる空気感。</figcaption>
+      </figure>
+      <figure>
+        <img src="images/snack.jpg" alt="スナックコーナーの様子">
+        <figcaption>ちょっと息抜きできる、スナックコーナー。</figcaption>
+      </figure>
+      <figure>
+        <img src="images/result.jpg" alt="学習の成果が見える場面">
+        <figcaption>「できた」が積み重なると、自己肯定感も育ちます。</figcaption>
+      </figure>
+    </div>
 
-  <p><a href="../index.html">トップページへ戻る</a></p>
+    <p class="note">※ 写真はあとから差し替えOKです（まずは“空気”を見せるのが勝ち）。</p>
+  </section>
 
+  <section>
+    <h2>こんな生徒に</h2>
+    <ul>
+      <li>勉強が苦手で、学校の授業がつらい／ついていけない</li>
+      <li>授業が簡単すぎる・合わない・先生が苦手で退屈</li>
+      <li>進取心があるので、学年にとらわれず伸ばしたい</li>
+      <li>「できる・できない」より、学び方を整えたい</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>次の一歩</h2>
+    <p>
+      まずは、雰囲気を見てください。<br>
+      指導方針や詳細はこちらから。
+    </p>
+    <p><a class="cta" href="/juku/">個別指導の考え方（指導方針）を見る</a></p>
+  </section>
+
+  <footer>
+    © biblio cafe DL
+  </footer>
 </body>
 </html>
