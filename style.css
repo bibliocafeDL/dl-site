@@ -1,16 +1,22 @@
-.site-header {
-display: flex;
-justify-content: flex-start; /* 左寄せ */
-padding: 30px 40px;
-}
-
-.logo {
-width: 160px;
-height: auto;
-}
-
 body {
 margin: 0;
 background-color: #faf9f7;
 font-family: "Hiragino Mincho ProN", serif;
+}
+
+/* ロゴだけ左 */
+.site-header {
+padding: 30px 40px;
+}
+
+/* 中身は中央 */
+.container {
+max-width: 1000px;
+margin: 0 auto;
+padding: 0 20px;
+}
+
+/* ヒーロー画像中央 */
+.hero {
+text-align: center;
 }
