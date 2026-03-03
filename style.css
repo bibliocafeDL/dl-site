@@ -209,3 +209,23 @@ height: 100px; /* ← ここでサイズ調整 */
 width: auto;
 display: block;
 }
+
+/* ===== スマホ調整 ===== */
+@media (max-width: 768px) {
+
+.feature-grid {
+flex-direction: column;
+align-items: center;
+}
+
+.feature-card {
+width: 85%;
+}
+
+.feature-card p {
+writing-mode: horizontal-tb; /* ← 横書きに戻す */
+text-align: center;
+line-height: 1.8;
+}
+
+}
