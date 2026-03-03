@@ -1,7 +1,7 @@
 .site-header {
-position: absolute;
-top: 30px;
-left: 40px;
+display: flex;
+justify-content: flex-start; /* 左寄せ */
+padding: 30px 40px;
 }
 
 .logo {
