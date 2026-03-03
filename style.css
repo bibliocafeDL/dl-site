@@ -197,8 +197,14 @@ gap: 40px;
 }
 }
 
-<header class="site-header">
-<div class="logo">
-<img src="images/logo.png" alt="biblio cafe DL">
-</div>
-</header>
+/* ===== ヘッダー ===== */
+.site-header {
+padding: 20px 40px;
+}
+
+/* ロゴ画像を小さく */
+.logo img {
+height: 36px; /* ← ここでサイズ調整 */
+width: auto;
+display: block;
+}
