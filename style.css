@@ -13,9 +13,12 @@ height: auto;
 
 /* ロゴを左上に */
 .site-header {
-position: absolute;
-top: 30px;
-left: 40px;
+padding: 30px 40px;
+}
+
+.logo {
+width: 160px;
+height: auto;
 }
 
 /* 中身は中央 */
