@@ -204,7 +204,7 @@ padding: 20px 40px;
 
 /* ロゴ画像を小さく */
 .logo img {
-height: 70px; /* ← ここでサイズ調整 */
+height: 100px; /* ← ここでサイズ調整 */
 width: auto;
 display: block;
 }
