@@ -5,8 +5,17 @@ font-family: "Hiragino Mincho ProN", serif;
 }
 
 /* ロゴだけ左 */
+/* ロゴのサイズを小さくする */
+.logo {
+width: 160px; /* 好きなサイズに調整OK */
+height: auto;
+}
+
+/* ロゴを左上に */
 .site-header {
-padding: 30px 40px;
+position: absolute;
+top: 30px;
+left: 40px;
 }
 
 /* 中身は中央 */
