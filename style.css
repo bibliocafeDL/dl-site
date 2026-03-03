@@ -1,14 +1,16 @@
+.site-header {
+position: absolute;
+top: 30px;
+left: 40px;
+}
+
+.logo {
+width: 160px;
+height: auto;
+}
+
 body {
 margin: 0;
 background-color: #faf9f7;
 font-family: "Hiragino Mincho ProN", serif;
-}
-
-.site-header {
-padding: 30px 40px;
-}
-
-.logo {
-width: 180px; /* ← サイズ調整ここ */
-height: auto;
 }
