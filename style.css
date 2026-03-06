@@ -247,3 +247,41 @@ width: 150px;
 }
 
 }
+
+.spring-banner{
+max-width:900px;
+margin:60px auto;
+background:#fffaf7;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+text-align:center;
+}
+
+.spring-banner img{
+width:100%;
+border-radius:12px;
+margin-bottom:20px;
+}
+
+.spring-text h2{
+color:#b76e79;
+margin-bottom:10px;
+}
+
+.spring-button{
+display:inline-block;
+margin-top:15px;
+padding:14px 28px;
+background:#f4a7b9;
+color:white;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+transition:0.3s;
+}
+
+.spring-button:hover{
+background:#e889a0;
+}
+
