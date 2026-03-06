@@ -292,3 +292,67 @@ margin:40px auto;
 
 }
 
+.container{
+max-width:900px;
+margin:auto;
+padding:40px 20px;
+}
+
+.catch{
+text-align:center;
+font-size:22px;
+color:#b76e79;
+margin-bottom:40px;
+}
+
+.section{
+margin:50px 0;
+}
+
+.section h2{
+font-size:26px;
+margin-bottom:15px;
+border-left:6px solid #e8a0b0;
+padding-left:12px;
+}
+
+.flyer{
+width:100%;
+border-radius:12px;
+box-shadow:0 5px 18px rgba(0,0,0,0.1);
+margin-bottom:40px;
+}
+
+.box{
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 4px 14px rgba(0,0,0,0.06);
+}
+
+.button-area{
+text-align:center;
+margin:60px 0;
+}
+
+.apply-button{
+display:inline-block;
+padding:16px 34px;
+background:#e889a0;
+color:white;
+font-size:18px;
+text-decoration:none;
+border-radius:40px;
+font-weight:bold;
+}
+
+.apply-button:hover{
+background:#d6758c;
+}
+
+.notice{
+text-align:center;
+font-size:14px;
+color:#777;
+margin-top:15px;
+}
