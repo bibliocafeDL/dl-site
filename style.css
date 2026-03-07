@@ -381,3 +381,85 @@ background:#e8a6b7;
 transform:translateY(-2px);
 
 }
+
+
+<style>
+.dl-concept-section {
+background: #f7f6f2;
+padding: 72px 20px;
+}
+
+.dl-concept-inner {
+max-width: 1100px;
+margin: 0 auto;
+display: grid;
+grid-template-columns: 1fr 1.1fr;
+gap: 48px;
+align-items: center;
+}
+
+.dl-concept-image img {
+width: 100%;
+height: auto;
+display: block;
+border-radius: 18px;
+box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.dl-concept-text {
+color: #3f3a36;
+line-height: 2;
+font-size: 16px;
+letter-spacing: 0.03em;
+}
+
+.dl-concept-label {
+font-size: 13px;
+letter-spacing: 0.14em;
+color: #8a8179;
+margin-bottom: 12px;
+}
+
+.dl-concept-catch {
+font-size: 34px;
+line-height: 1.5;
+font-weight: 500;
+margin: 0 0 28px;
+color: #2f2a27;
+}
+
+.dl-concept-text p {
+margin: 0 0 20px;
+}
+
+.dl-concept-text strong {
+font-weight: 600;
+color: #2f2a27;
+}
+
+@media (max-width: 900px) {
+.dl-concept-inner {
+grid-template-columns: 1fr;
+gap: 32px;
+}
+
+.dl-concept-catch {
+font-size: 28px;
+}
+}
+
+@media (max-width: 480px) {
+.dl-concept-section {
+padding: 56px 16px;
+}
+
+.dl-concept-catch {
+font-size: 24px;
+}
+
+.dl-concept-text {
+font-size: 15px;
+line-height: 1.9;
+}
+}
+</style>
