@@ -214,7 +214,7 @@ margin-left:auto;
 
 /* ロゴ画像を小さく */
 .logo img {
-height: 70px; /* ← ここでサイズ調整 */
+height: 200px; /* ← ここでサイズ調整 */
 width: auto;
 display: block;
 }
