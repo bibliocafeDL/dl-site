@@ -54,7 +54,7 @@ display: block;
 
 .hero {
 max-width: 1000px;
-margin: 0 auto 60px;
+margin: 40px auto 60px;
 }
 
 .caption {
@@ -206,6 +206,8 @@ display:flex;
 justify-content:space-between;
 align-items:center;
 padding:20px 40px;
+position:relative;
+z-index:10;
 }
 
 .main-nav{
@@ -214,7 +216,7 @@ margin-left:auto;
 
 /* ロゴ画像を小さく */
 .logo img {
-height: 200px; /* ← ここでサイズ調整 */
+height: 180px; /* ← ここでサイズ調整 */
 width: auto;
 display: block;
 }
