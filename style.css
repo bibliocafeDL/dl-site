@@ -199,8 +199,19 @@ gap: 40px;
 }
 
 /* ===== ヘッダー ===== */
-.site-header {
-padding: 20px 40px;
+.site-header{
+max-width:1000px;
+margin:0 auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 40px;
+position:relative;
+z-index:10;
+}
+
+.main-nav{
+margin-left:auto;
 }
 
 /* ロゴ画像を小さく */
