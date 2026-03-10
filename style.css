@@ -479,7 +479,7 @@ list-style:none;
 }
 
 .main-nav a{
-color:white;
+color:#333;
 text-decoration:none;
 font-size:14px;
 letter-spacing:2px;
@@ -493,8 +493,3 @@ opacity:0.7;
 text-transform:uppercase;
 }
 
-.main-nav ul{
-display:flex;
-gap:30px;
-list-style:none;
-}
