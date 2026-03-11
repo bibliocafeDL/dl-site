@@ -576,3 +576,23 @@ font-size:22px;
 font-weight:600;
 margin:40px 0;
 }
+
+.concept-point{
+max-width:720px;
+margin:80px auto;
+padding:0 20px;
+text-align:center;
+}
+
+.concept-point h2{
+font-size:26px;
+margin-bottom:30px;
+}
+
+.concept-strong{
+max-width:720px;
+margin:80px auto;
+font-size:22px;
+line-height:1.8;
+text-align:center;
+}
