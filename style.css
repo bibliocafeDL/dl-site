@@ -504,41 +504,56 @@ opacity:0.7;
 text-transform:uppercase;
 }
 
-/* concept hero */
+/* ===============================
+Concept Page
+=============================== */
 
-.concept-hero{
-max-width:1100px;
-margin:60px auto 80px;
-padding:0 20px;
-}
-
-.concept-hero img{
-width:100%;
-border-radius:14px;
-}
-
-
-/* concept intro */
+/* 上の余白（メニューとの距離） */
 
 .concept-intro{
 text-align:center;
-margin-bottom:80px;
+margin-top:140px;
+margin-bottom:40px;
+padding:0 20px;
 }
+
+
+/* DL EDUCATION CONCEPT */
 
 .concept-label{
 font-size:13px;
 letter-spacing:3px;
 color:#999;
-margin-bottom:10px;
+margin-bottom:20px;
 }
+
+
+/* キャッチコピー */
 
 .concept-catch{
-font-size:38px;
+font-size:40px;
 line-height:1.6;
+margin-bottom:40px;
+font-weight:500;
 }
 
 
-/* concept body */
+/* コンセプト画像 */
+
+.concept-image{
+text-align:center;
+margin:40px 0 60px;
+}
+
+.concept-image img{
+width:180px; /* ←ここで画像サイズ調整 */
+max-width:70%;
+border-radius:14px;
+opacity:0.95;
+}
+
+
+/* 本文 */
 
 .concept-body{
 max-width:760px;
@@ -553,45 +568,11 @@ margin-bottom:28px;
 color:#444;
 }
 
+
+/* 強調文 */
+
 .concept-strong{
 font-size:22px;
 font-weight:600;
 margin:40px 0;
-}
-
-.concept-hero{
-max-width:1100px;
-margin:80px auto 60px;
-padding:0 20px;
-}
-
-.concept-hero img{
-width:100%;
-border-radius:16px;
-}
-
-.concept-label{
-font-size:13px;
-letter-spacing:3px;
-color:#999;
-margin-bottom:20px;
-}
-
-.concept-catch{
-font-size:42px;
-line-height:1.6;
-margin-bottom:40px;
-}
-
-.concept-body{
-max-width:760px;
-margin:0 auto;
-padding:0 20px;
-}
-
-.concept-body p{
-font-size:17px;
-line-height:2.2;
-margin-bottom:28px;
-color:#444;
 }
