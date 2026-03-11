@@ -596,3 +596,31 @@ font-size:22px;
 line-height:1.8;
 text-align:center;
 }
+
+/* ===== concept 3 points ===== */
+
+.concept-points{
+max-width:900px;
+margin:60px auto 100px;
+display:flex;
+gap:40px;
+justify-content:center;
+text-align:center;
+padding:0 20px;
+}
+
+.concept-point{
+flex:1;
+}
+
+.concept-point h3{
+font-size:20px;
+margin-bottom:14px;
+font-weight:500;
+}
+
+.concept-point p{
+font-size:15px;
+line-height:2;
+color:#555;
+}
