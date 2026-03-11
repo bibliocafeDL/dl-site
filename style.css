@@ -504,7 +504,7 @@ opacity:0.7;
 text-transform:uppercase;
 }
 
-/* concept hero image */
+/* concept hero */
 
 .concept-hero{
 max-width:1100px;
@@ -515,42 +515,46 @@ padding:0 20px;
 .concept-hero img{
 width:100%;
 border-radius:14px;
-display:block;
 }
 
 
+/* concept intro */
 
-/* concept section */
+.concept-intro{
+text-align:center;
+margin-bottom:80px;
+}
 
-.dl-concept-section{
-max-width:780px;
+.concept-label{
+font-size:13px;
+letter-spacing:3px;
+color:#999;
+margin-bottom:10px;
+}
+
+.concept-catch{
+font-size:38px;
+line-height:1.6;
+}
+
+
+/* concept body */
+
+.concept-body{
+max-width:760px;
 margin:0 auto 120px;
 padding:0 20px;
 }
 
-.dl-concept-label{
-font-size:13px;
-letter-spacing:3px;
-color:#999;
-margin-bottom:15px;
-}
-
-.dl-concept-catch{
-font-size:36px;
-line-height:1.6;
-margin-bottom:45px;
-}
-
-.dl-concept-text p{
+.concept-body p{
 font-size:17px;
-line-height:2.1;
-margin-bottom:26px;
+line-height:2.2;
+margin-bottom:28px;
 color:#444;
 }
 
 .concept-strong{
 font-size:22px;
 font-weight:600;
-line-height:1.8;
 margin:40px 0;
 }
