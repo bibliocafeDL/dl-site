@@ -624,3 +624,36 @@ font-size:15px;
 line-height:2;
 color:#555;
 }
+
+/* contact page */
+
+.contact-wrap{
+background:#f7f6f3;
+padding:80px 20px;
+min-height:100vh;
+}
+
+.contact-wrap h1{
+text-align:center;
+font-size:34px;
+letter-spacing:2px;
+margin-bottom:20px;
+}
+
+.contact-wrap p{
+text-align:center;
+color:#666;
+margin-bottom:50px;
+line-height:1.8;
+}
+
+/* Googleフォームを包む */
+
+.form-area{
+max-width:820px;
+margin:0 auto;
+background:white;
+padding:40px;
+border-radius:18px;
+box-shadow:0 20px 40px rgba(0,0,0,0.06);
+}
