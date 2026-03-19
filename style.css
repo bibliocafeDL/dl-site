@@ -676,7 +676,7 @@ box-shadow:0 10px 30px rgba(0,0,0,0.05);
 /* coaching hero */
 
 .coaching-hero{
-max-width:1000px;
+max-width:720px;
 margin:80px auto 60px;
 padding:0 20px;
 }
@@ -748,3 +748,4 @@ text-align:center;
 border-radius:14px;
 font-size:18px;
 }
+
