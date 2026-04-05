@@ -847,3 +847,80 @@ font-size:15px;
 line-height:1.9;
 }
 }
+
+/* ===== results test ===== */
+
+.results-section{
+max-width: 1100px !important;
+margin: 100px auto !important;
+padding: 40px 20px !important;
+background: #f8f6f2 !important;
+}
+
+.results-inner{
+max-width: 1100px !important;
+margin: 0 auto !important;
+}
+
+.results-label{
+text-align:center !important;
+font-size:12px !important;
+letter-spacing:3px !important;
+color:#999 !important;
+margin-bottom:12px !important;
+}
+
+.results-title{
+text-align:center !important;
+font-size:36px !important;
+margin-bottom:20px !important;
+color:#3f312b !important;
+}
+
+.results-lead{
+text-align:center !important;
+font-size:16px !important;
+line-height:2 !important;
+color:#666 !important;
+margin-bottom:24px !important;
+}
+
+.results-note{
+text-align:center !important;
+font-size:13px !important;
+color:#888 !important;
+margin-bottom:40px !important;
+}
+
+.results-grid{
+display:grid !important;
+grid-template-columns:repeat(2, 1fr) !important;
+gap:24px !important;
+}
+
+.results-card{
+background:#fff !important;
+border-radius:18px !important;
+padding:32px 30px !important;
+box-shadow:0 8px 24px rgba(0,0,0,0.05) !important;
+}
+
+.results-card h3{
+font-size:22px !important;
+margin-bottom:18px !important;
+color:#4a3b34 !important;
+border-bottom:1px solid #eee7df !important;
+padding-bottom:10px !important;
+}
+
+.results-card ul{
+list-style:none !important;
+padding:0 !important;
+margin:0 !important;
+}
+
+.results-card li{
+font-size:16px !important;
+line-height:2 !important;
+color:#555 !important;
+}
