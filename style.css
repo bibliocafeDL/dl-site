@@ -925,3 +925,16 @@ line-height:2;
 color:#555 ;
 }
 
+ul li {
+margin: 10px 0;
+}
+
+ul li a {
+text-decoration: none;
+color: #333;
+font-weight: bold;
+}
+
+ul li a:hover {
+color: #ff7aa2;
+}
