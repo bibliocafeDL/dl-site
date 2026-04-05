@@ -942,3 +942,15 @@ color: #ff7aa2;
 .results-card {
 box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
+
+.insta-grid {
+display: flex;
+gap: 20px;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+.insta-grid blockquote {
+max-width: 400px;
+width: 100%;
+}
