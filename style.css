@@ -676,7 +676,7 @@ box-shadow:0 10px 30px rgba(0,0,0,0.05);
 /* coaching hero */
 
 .coaching-hero{
-max-width:600px;
+max-width:350px;
 margin:80px auto 60px;
 padding:0 20px;
 }
@@ -747,5 +747,39 @@ padding:28px;
 text-align:center;
 border-radius:14px;
 font-size:18px;
+}
+
+.results-section{
+max-width:800px;
+margin:100px auto;
+padding:0 20px;
+}
+
+.results-section h2{
+font-size:28px;
+margin-bottom:20px;
+text-align:center;
+}
+
+.results-note{
+font-size:13px;
+color:#888;
+text-align:center;
+margin-bottom:30px;
+}
+
+.results-section h3{
+margin-top:30px;
+margin-bottom:10px;
+font-size:18px;
+}
+
+.results-section ul{
+list-style:none;
+padding:0;
+}
+
+.results-section li{
+margin-bottom:8px;
 }
 
