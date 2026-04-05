@@ -851,76 +851,77 @@ line-height:1.9;
 /* ===== results test ===== */
 
 .results-section{
-max-width: 1100px !important;
-margin: 100px auto !important;
-padding: 40px 20px !important;
-background: #f8f6f2 !important;
+max-width: 1100px;
+margin: 100px auto;
+padding: 40px 20px;
+background: #f8f6f2;
 }
 
 .results-inner{
-max-width: 1100px !important;
-margin: 0 auto !important;
+max-width: 1100px;
+margin: 0 auto;
 }
 
 .results-label{
-text-align:center !important;
-font-size:12px !important;
-letter-spacing:3px !important;
-color:#999 !important;
-margin-bottom:12px !important;
+text-align:center;
+font-size:12px;
+letter-spacing:3px;
+color:#999;
+margin-bottom:12px;
 }
 
 .results-title{
-text-align:center !important;
-font-size:36px !important;
-margin-bottom:20px !important;
-color:#3f312b !important;
+text-align:center;
+font-size:36px;
+margin-bottom:20px;
+color:#3f312b;
 }
 
 .results-lead{
-text-align:center !important;
-font-size:16px !important;
-line-height:2 !important;
-color:#666 !important;
-margin-bottom:24px !important;
+text-align:center;
+font-size:16px;
+line-height:2;
+color:#666;
+margin-bottom:24px;
 }
 
 .results-note{
-text-align:center !important;
-font-size:13px !important;
-color:#888 !important;
-margin-bottom:40px !important;
+text-align:center;
+font-size:13px;
+color:#888;
+margin-bottom:40px;
 }
 
 .results-grid{
-display:grid !important;
-grid-template-columns:repeat(2, 1fr) !important;
-gap:24px !important;
+display:grid;
+grid-template-columns:repeat(2, 1fr);
+gap:24px;
 }
 
 .results-card{
-background:#fff !important;
-border-radius:18px !important;
-padding:32px 30px !important;
-box-shadow:0 8px 24px rgba(0,0,0,0.05) !important;
+background:#fff;
+border-radius:18px;
+padding:32px 30px;
+box-shadow:0 8px 24px rgba(0,0,0,0.05);
 }
 
 .results-card h3{
-font-size:22px !important;
-margin-bottom:18px !important;
-color:#4a3b34 !important;
-border-bottom:1px solid #eee7df !important;
-padding-bottom:10px !important;
+font-size:22px;
+margin-bottom:18px;
+color:#4a3b34;
+border-bottom:1px solid #eee7df;
+padding-bottom:10px;
 }
 
 .results-card ul{
-list-style:none !important;
-padding:0 !important;
-margin:0 !important;
+list-style:none;
+padding:0;
+margin:0;
 }
 
 .results-card li{
-font-size:16px !important;
-line-height:2 !important;
-color:#555 !important;
+font-size:16px;
+line-height:2;
+color:#555 ;
 }
+
