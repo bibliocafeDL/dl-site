@@ -938,3 +938,7 @@ font-weight: bold;
 ul li a:hover {
 color: #ff7aa2;
 }
+
+.results-card {
+box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
