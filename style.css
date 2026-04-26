@@ -1072,3 +1072,7 @@ padding: 12px 20px;
 text-align: center;
 }
 }
+
+.eiken-section {
+display: none;
+}
