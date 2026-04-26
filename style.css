@@ -1076,3 +1076,42 @@ text-align: center;
 .eiken-section {
 display: none;
 }
+
+/* 数検バナー */
+.suken-banner {
+background: #e8f4ff;
+padding: 30px;
+border-radius: 20px;
+text-align: center;
+margin: 40px auto;
+}
+
+.suken-title {
+font-size: 20px;
+margin-bottom: 10px;
+}
+
+.suken-deadline {
+font-size: 15px;
+line-height: 1.8;
+margin-bottom: 16px;
+}
+
+.suken-note {
+font-size: 14px;
+margin-bottom: 20px;
+}
+
+.suken-button {
+display: inline-block;
+background: #6bb6ff;
+color: #fff;
+padding: 12px 24px;
+border-radius: 999px;
+text-decoration: none;
+}
+
+.suken-button:hover {
+background: #3b82f6;
+}
+
