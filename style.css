@@ -1087,26 +1087,28 @@ margin: 40px auto;
 }
 
 .suken-title {
-font-size: 20px;
-margin-bottom: 10px;
+font-size: 24px;
+font-weight: bold;
+margin-bottom: 14px;
 }
 
 .suken-deadline {
-font-size: 15px;
+font-size: 17px;
 line-height: 1.8;
-margin-bottom: 16px;
+margin-bottom: 18px;
 }
 
 .suken-note {
-font-size: 14px;
-margin-bottom: 20px;
+font-size: 15px;
+color: #555;
+margin-bottom: 26px;
 }
 
 .suken-button {
 display: inline-block;
 background: #6bb6ff;
 color: #fff;
-padding: 12px 24px;
+padding: 16px 30px;
 border-radius: 999px;
 text-decoration: none;
 }
