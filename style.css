@@ -1207,3 +1207,16 @@ white-space: nowrap;
 margin-top: 0 !important;
 }
 }
+
+/* スマホ：ヒーロー画像をメニューの下へ強制的に離す */
+@media screen and (max-width: 768px) {
+
+.hero {
+padding-top: 90px !important;
+}
+
+.coaching-hero {
+padding-top: 90px !important;
+}
+
+}
