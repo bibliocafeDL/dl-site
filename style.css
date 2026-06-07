@@ -1220,3 +1220,26 @@ padding-top: 90px !important;
 }
 
 }
+
+/* スマホ：conceptページの3列を縦並びにする */
+@media screen and (max-width: 768px) {
+
+.concept-grid,
+.concept-cards,
+.concept-three,
+.feature-grid {
+display: flex !important;
+flex-direction: column !important;
+gap: 32px;
+}
+
+.concept-grid > *,
+.concept-cards > *,
+.concept-three > *,
+.feature-grid > * {
+width: 100% !important;
+max-width: 100% !important;
+text-align: center;
+}
+
+}
