@@ -1152,3 +1152,18 @@ margin-bottom: 24px;
 }
 }
 
+/* スマホ：ヘッダーを画像の上に重ねない */
+@media screen and (max-width: 768px) {
+
+.site-header {
+position: static;
+padding: 24px 16px 28px;
+margin-bottom: 28px;
+background: transparent;
+}
+
+.hero {
+margin-top: 0;
+}
+
+}
