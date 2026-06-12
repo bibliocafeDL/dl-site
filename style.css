@@ -1266,3 +1266,26 @@ text-align: center;
 }
 
 }
+
+/* スマホ：conceptの3つの力を1列にする */
+@media screen and (max-width: 768px) {
+
+.concept-powers,
+.power-grid,
+.three-powers,
+.concept-grid {
+display: flex !important;
+flex-direction: column !important;
+gap: 36px !important;
+}
+
+.concept-powers > *,
+.power-grid > *,
+.three-powers > *,
+.concept-grid > * {
+width: 100% !important;
+max-width: 100% !important;
+text-align: center;
+}
+
+}
