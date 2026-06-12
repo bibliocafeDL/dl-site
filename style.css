@@ -1,21 +1,128 @@
+/* =========================================================
+   biblio cafe DL - Cleaned stylesheet
+   目的：重複CSSを整理し、ヘッダー・スマホ表示の崩れを防ぐ
+   ========================================================= */
+
+/* ---------- Base ---------- */
+* {
+  box-sizing: border-box;
+}
 
 body {
+  margin: 0;
   font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
   background-color: #f7f5f2;
   color: #333;
   line-height: 1.9;
-  padding: 48px 20px;
 }
 
-header {
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
   text-align: center;
-  margin-bottom: 40px;
+}
+
+/* ---------- Header / Navigation ---------- */
+.site-header {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px 40px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: static;
+  z-index: 10;
+}
+
+.logo img {
+  width: auto;
+  height: 180px;
+  display: block;
+}
+
+.main-nav {
+  margin-left: auto;
+}
+
+.main-nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav li {
+  margin: 0;
+}
+
+.main-nav a {
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.main-nav a:hover {
+  opacity: 0.7;
+}
+
+/* ---------- Home Hero ---------- */
+.hero {
+  max-width: 1000px;
+  margin: 40px auto 60px;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,0.08);
+  background: #fff;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.caption {
+  position: absolute;
+  bottom: 18px;
+  left: 20px;
+  background: rgba(255,255,255,0.85);
+  padding: 10px 14px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* ---------- Common sections ---------- */
+section {
+  margin-top: 56px;
+}
+
+h1, h2, h3 {
+  font-weight: normal;
 }
 
 h1 {
-  font-weight: normal;
   letter-spacing: 2px;
-  margin-top: 140px;
+}
+
+h2 {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 6px;
+  margin-bottom: 18px;
 }
 
 .lead {
@@ -38,50 +145,12 @@ h1 {
   background: rgba(0,0,0,0.04);
 }
 
-.hero {
-  position: relative;
-  border-radius: 12px;
-  overflow: hidden;
-  border: 1px solid rgba(0,0,0,0.08);
-  background: #fff;
-}
-
-.hero img {
-width: 100%;
-height: auto;
-display: block;
-}
-
-.hero {
-max-width: 1000px;
-margin: 150px auto 60px;
-}
-
-.caption {
-  position: absolute;
-  bottom: 18px;
-  left: 20px;
-  background: rgba(255,255,255,0.85);
-  padding: 10px 14px;
-  font-size: 0.95rem;
-  line-height: 1.6;
-}
-
-section {
-  margin-top: 56px;
-}
-
-h2 {
-  font-weight: normal;
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 6px;
-  margin-bottom: 18px;
-}
-
+/* ---------- Grid / Figures ---------- */
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 14px;
+  gap: 40px;
+  margin-top: 60px;
 }
 
 figure {
@@ -92,17 +161,25 @@ figure {
   background: #fff;
 }
 
+.grid img,
 figure img {
   width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
   display: block;
 }
 
-figcaption {
+figcaption,
+.grid figcaption {
   padding: 10px 12px;
-  font-size: 0.92rem;
+  margin-top: 12px;
+  font-size: 14px;
+  line-height: 1.6;
   color: #555;
+  text-align: left;
 }
 
+/* ---------- Footer ---------- */
 footer {
   margin-top: 70px;
   padding-top: 18px;
@@ -112,1279 +189,688 @@ footer {
   color: #666;
 }
 
-@media (max-width: 820px) {
-  .grid {
-    grid-template-columns: 1fr;
-  }
-
-  .hero img {
-    height: 260px;
-  }
-}
-
-.grid {
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-gap: 40px;
-margin-top: 60px;
-}
-
-.grid figure {
-margin: 0;
-}
-
-.grid img {
-width: 100%;
-aspect-ratio: 1 / 1;
-object-fit: cover;
-display: block;
-}
-
-.grid figcaption {
-margin-top: 12px;
-font-size: 14px;
-line-height: 1.6;
-text-align: left;
-}
-
-.container {
-max-width: 1100px;
-margin: 0 auto;
-padding: 0 20px;
-text-align: center;
-}
-
 .footer-inner {
-max-width: 1100px;
-margin: 0 auto;
-display: flex;
-gap: 60px;
-align-items: flex-start;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
 }
 
-.footer-info {
-flex: 1;
-line-height: 1.9;
-}
-
+.footer-info,
 .footer-map {
-flex: 1;
+  flex: 1;
 }
 
 .footer-map iframe {
-width: 100%;
-height: 280px;
-border-radius: 10px;
-border: 0;
+  width: 100%;
+  height: 280px;
+  border-radius: 10px;
+  border: 0;
 }
 
 footer h3 {
-font-weight: 400;
-margin-bottom: 20px;
-letter-spacing: 2px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
 }
 
 .copyright {
-text-align: center;
-margin-top: 60px;
-font-size: 13px;
-color: #777;
+  text-align: center;
+  margin-top: 60px;
+  font-size: 13px;
+  color: #777;
 }
 
-@media (max-width: 768px) {
-.footer-inner {
-flex-direction: column;
-gap: 40px;
-}
-}
-
-/* ===== ヘッダー ===== */
-.site-header{
-max-width:1000px;
-margin:0 auto;
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 40px;
-position:relative;
-z-index:10;
-}
-
-.main-nav{
-margin-left:auto;
-}
-
-/* ロゴ画像を小さく */
-.logo img {
-height: 180px; /* ← ここでサイズ調整 */
-width: auto;
-display: block;
-}
-
-
-@media (max-width: 768px) {
-
-.grid {
-display: flex;
-flex-direction: column;
-align-items: center;
-gap: 30px;
-}
-
-.grid figure {
-width: 85%;
-}
-
-.grid figcaption {
-writing-mode: horizontal-tb;
-text-align: center;
-line-height: 1.8;
-}
-
-}
-
-@media (max-width: 768px) {
-
-.site-header {
-position: absolute;
-top: 30px;
-left: 25px;
-z-index: 20;
-padding: 0;
-}
-
-.logo img {
-width: 150px;
-}
-
-}
-
-.spring-banner{
-max-width:900px;
-margin:60px auto;
-background:#fffaf7;
-padding:30px;
-border-radius:15px;
-box-shadow:0 5px 20px rgba(0,0,0,0.08);
-text-align:center;
-}
-
-.spring-banner img{
-width:100%;
-border-radius:12px;
-margin-bottom:20px;
-}
-
-.spring-text h2{
-color:#b76e79;
-margin-bottom:10px;
-}
-
-.spring-button{
-display:inline-block;
-margin-top:15px;
-padding:14px 28px;
-background:#f4a7b9;
-color:white;
-text-decoration:none;
-border-radius:30px;
-font-weight:bold;
-transition:0.3s;
-}
-
-.spring-button:hover{
-background:#e889a0;
-}
-
-.form-area{
-
-max-width:800px;
-margin:40px auto;
-
-}
-
-.container{
-max-width:900px;
-margin:auto;
-padding:40px 20px;
-}
-
-.catch{
-text-align:center;
-font-size:22px;
-color:#b76e79;
-margin-bottom:40px;
-}
-
-.section{
-margin:50px 0;
-}
-
-.section h2{
-font-size:26px;
-margin-bottom:15px;
-border-left:6px solid #e8a0b0;
-padding-left:12px;
-}
-
-.flyer{
-width:100%;
-border-radius:12px;
-box-shadow:0 5px 18px rgba(0,0,0,0.1);
-margin-bottom:40px;
-}
-
-.box{
-background:white;
-padding:25px;
-border-radius:12px;
-box-shadow:0 4px 14px rgba(0,0,0,0.06);
-}
-
-.button-area{
-text-align:center;
-margin:60px 0;
-}
-
-.apply-button{
-display:inline-block;
-padding:16px 34px;
-background:#e889a0;
-color:white;
-font-size:18px;
-text-decoration:none;
-border-radius:40px;
-font-weight:bold;
-}
-
-.apply-button:hover{
-background:#d6758c;
-}
-
-.notice{
-text-align:center;
-font-size:14px;
-color:#777;
-margin-top:15px;
-}
-
-.eiken-button{
-
-display:inline-block;
-margin-top:10px;
-padding:12px 24px;
-
-background:#f6c5d1;
-color:#333;
-
-font-weight:600;
-text-decoration:none;
-
-border-radius:30px;
-
-transition:0.3s;
-
-}
-
-.eiken-button:hover{
-
-background:#e8a6b7;
-transform:translateY(-2px);
-
-}
-
-
-.dl-concept-section {
-background: #f7f6f2;
-padding: 72px 20px;
-}
-
-.dl-concept-inner {
-max-width: 1100px;
-margin: 0 auto;
-display: grid;
-grid-template-columns: 1fr 1.1fr;
-gap: 48px;
-align-items: center;
-}
-
-.dl-concept-image img {
-width: 100%;
-height: auto;
-display: block;
-border-radius: 18px;
-box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-}
-
-.dl-concept-text {
-color: #3f3a36;
-line-height: 2;
-font-size: 16px;
-letter-spacing: 0.03em;
-}
-
-.dl-concept-label {
-font-size: 13px;
-letter-spacing: 0.14em;
-color: #8a8179;
-margin-bottom: 12px;
-}
-
-.dl-concept-catch {
-font-size: 34px;
-line-height: 1.5;
-font-weight: 500;
-margin: 0 0 28px;
-color: #2f2a27;
-}
-
-.dl-concept-text p {
-margin: 0 0 20px;
-}
-
-.dl-concept-text strong {
-font-weight: 600;
-color: #2f2a27;
-}
-
-@media (max-width: 900px) {
-.dl-concept-inner {
-grid-template-columns: 1fr;
-gap: 32px;
-}
-
-.dl-concept-catch {
-font-size: 28px;
-}
-}
-
-@media (max-width: 480px) {
-.dl-concept-section {
-padding: 56px 16px;
-}
-
-.dl-concept-catch {
-font-size: 24px;
-}
-
-.dl-concept-text {
-font-size: 15px;
-line-height: 1.9;
-}
-}
-
-.site-header{
-position:relative;
-max-width:1000px;
-margin:0 auto;
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 40px;
-}
-
-.main-nav ul{
-display:flex;
-gap:30px;
-list-style:none;
-}
-
-.main-nav a{
-color:#333;
-text-decoration:none;
-font-size:14px;
-letter-spacing:2px;
-}
-
-.main-nav a:hover{
-opacity:0.7;
-}
-
-.main-nav a{
-text-transform:uppercase;
-}
-
-/* ===============================
-Concept Page
-=============================== */
-
-/* 上の余白（メニューとの距離） */
-
-.concept-intro{
-text-align:center;
-margin-top:140px;
-margin-bottom:40px;
-padding:0 20px;
-}
-
-
-/* DL EDUCATION CONCEPT */
-
-.concept-label{
-font-size:13px;
-letter-spacing:3px;
-color:#999;
-margin-bottom:20px;
-}
-
-
-/* キャッチコピー */
-
-.concept-catch{
-font-size:40px;
-line-height:1.6;
-margin-bottom:40px;
-font-weight:500;
-}
-
-
-/* コンセプト画像 */
-
-.concept-image{
-text-align:center;
-margin:40px 0 60px;
-}
-
-.concept-image img{
-width:260px; /* ←ここで画像サイズ調整 */
-max-width:70%;
-border-radius:14px;
-opacity:0.95;
-}
-
-
-/* 本文 */
-
-.concept-body{
-max-width:760px;
-margin:0 auto 120px;
-padding:0 20px;
-}
-
-.concept-body p{
-font-size:17px;
-line-height:2.2;
-margin-bottom:28px;
-color:#444;
-}
-
-
-/* 強調文 */
-
-.concept-strong{
-font-size:22px;
-font-weight:600;
-margin:40px 0;
-}
-
-.concept-point{
-max-width:720px;
-margin:80px auto;
-padding:0 20px;
-text-align:center;
-}
-
-.concept-point h2{
-font-size:26px;
-margin-bottom:30px;
-}
-
-.concept-strong{
-max-width:720px;
-margin:80px auto;
-font-size:22px;
-line-height:1.8;
-text-align:center;
-}
-
-/* ===== concept 3 points ===== */
-
-.concept-points{
-max-width:900px;
-margin:60px auto 100px;
-display:flex;
-gap:40px;
-justify-content:center;
-text-align:center;
-padding:0 20px;
-}
-
-.concept-point{
-flex:1;
-}
-
-.concept-point h3{
-font-size:20px;
-margin-bottom:14px;
-font-weight:500;
-}
-
-.concept-point p{
-font-size:15px;
-line-height:2;
-color:#555;
-}
-
-/* contact page */
-
-.contact-wrap{
-background:#f7f6f3;
-padding:80px 20px;
-min-height:100vh;
-}
-
-.contact-wrap h1{
-text-align:center;
-font-size:34px;
-letter-spacing:2px;
-margin-bottom:20px;
-}
-
-.contact-wrap p{
-text-align:center;
-color:#666;
-margin-bottom:50px;
-line-height:1.8;
-}
-
-/* Googleフォームを包む */
-
-.form-area{
-max-width:820px;
-margin:0 auto;
-background:white;
-padding:40px;
-border-radius:18px;
-box-shadow:0 20px 40px rgba(0,0,0,0.06);
-}
-
-.contact-lead{
-text-align:center;
-font-size:18px;
-line-height:1.9;
-margin-bottom:40px;
-color:#555;
-}
-
-.form-area{
-background:#fff;
-padding:30px;
-border-radius:16px;
-box-shadow:0 10px 30px rgba(0,0,0,0.05);
-}
-
-/* coaching hero */
-
-.coaching-hero{
-max-width:350px;
-margin:80px auto 60px;
-padding:0 20px;
-}
-
-.coaching-hero img{
-width:100%;
-border-radius:16px;
-}
-
-
-/* intro */
-
-.coaching-intro{
-text-align:center;
-max-width:720px;
-margin:0 auto 80px;
-padding:0 20px;
-}
-
-.coaching-label{
-font-size:12px;
-letter-spacing:3px;
-color:#999;
-margin-bottom:16px;
-}
-
-.coaching-catch{
-font-size:38px;
-margin-bottom:24px;
-}
-
-.coaching-text{
-line-height:2;
-color:#555;
-}
-
-
-/* gallery */
-
-.coaching-gallery{
-display:flex;
-gap:20px;
-max-width:900px;
-margin:0 auto 100px;
-padding:0 20px;
-}
-
-.coaching-gallery img{
-width:33%;
-border-radius:12px;
-}
-
-
-/* feature */
-
-.coaching-feature{
-display:flex;
-gap:20px;
-max-width:900px;
-margin:0 auto 120px;
-padding:0 20px;
-}
-
-.feature-box{
-flex:1;
-background:#f7f6f3;
-padding:28px;
-text-align:center;
-border-radius:14px;
-font-size:18px;
-}
-
-.results-section{
-padding:100px 20px;
-background:#f8f6f2;
-}
-
-.results-inner{
-max-width:1100px;
-margin:0 auto;
-}
-
-.results-label{
-text-align:center;
-font-size:12px;
-letter-spacing:3px;
-color:#999;
-margin-bottom:12px;
-}
-
-.results-title{
-text-align:center;
-font-size:36px;
-margin-bottom:20px;
-color:#3f312b;
-}
-
-.results-lead{
-text-align:center;
-font-size:16px;
-line-height:2;
-color:#666;
-margin-bottom:60px;
-}
-
-.results-grid{
-display:grid;
-grid-template-columns:repeat(2, 1fr);
-gap:24px;
-}
-
-.results-card{
-background:#fff;
-border-radius:18px;
-padding:32px 30px;
-box-shadow:0 8px 24px rgba(0,0,0,0.05);
-}
-
-.results-card h3{
-font-size:22px;
-margin-bottom:18px;
-color:#4a3b34;
-border-bottom:1px solid #eee7df;
-padding-bottom:10px;
-}
-
-.results-card ul{
-list-style:none;
-padding:0;
-margin:0;
-}
-
-.results-card li{
-font-size:16px;
-line-height:2;
-color:#555;
-}
-
-@media (max-width: 768px){
-.results-section{
-padding:70px 16px;
-}
-
-.results-title{
-font-size:28px;
-}
-
-.results-lead{
-font-size:15px;
-margin-bottom:40px;
-}
-
-.results-grid{
-grid-template-columns:1fr;
-gap:18px;
-}
-
-.results-card{
-padding:24px 20px;
-}
-
-.results-card h3{
-font-size:20px;
-}
-
-.results-card li{
-font-size:15px;
-line-height:1.9;
-}
-}
-
-/* ===== results test ===== */
-
-.results-section{
-max-width: 1100px;
-margin: 100px auto;
-padding: 40px 20px;
-background: #f8f6f2;
-}
-
-.results-inner{
-max-width: 1100px;
-margin: 0 auto;
-}
-
-.results-label{
-text-align:center;
-font-size:12px;
-letter-spacing:3px;
-color:#999;
-margin-bottom:12px;
-}
-
-.results-title{
-text-align:center;
-font-size:36px;
-margin-bottom:20px;
-color:#3f312b;
-}
-
-.results-lead{
-text-align:center;
-font-size:16px;
-line-height:2;
-color:#666;
-margin-bottom:24px;
-}
-
-.results-note{
-text-align:center;
-font-size:13px;
-color:#888;
-margin-bottom:40px;
-}
-
-.results-grid{
-display:grid;
-grid-template-columns:repeat(2, 1fr);
-gap:24px;
-}
-
-.results-card{
-background:#fff;
-border-radius:18px;
-padding:32px 30px;
-box-shadow:0 8px 24px rgba(0,0,0,0.05);
-}
-
-.results-card h3{
-font-size:22px;
-margin-bottom:18px;
-color:#4a3b34;
-border-bottom:1px solid #eee7df;
-padding-bottom:10px;
-}
-
-.results-card ul{
-list-style:none;
-padding:0;
-margin:0;
-}
-
-.results-card li{
-font-size:16px;
-line-height:2;
-color:#555 ;
-}
-
-ul li {
-margin: 10px 0;
-}
-
-ul li a {
-text-decoration: none;
-color: #333;
-font-weight: bold;
-}
-
-ul li a:hover {
-color: #ff7aa2;
-}
-
-.results-card {
-box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-}
-
-.insta-grid {
-display: flex;
-gap: 20px;
-justify-content: center;
-flex-wrap: wrap;
-}
-
-.insta-grid blockquote {
-max-width: 400px;
-width: 100%;
-}
-
-/* =========================
-スマホ表示調整
-========================= */
-@media screen and (max-width: 768px) {
-
-body {
-font-size: 15px;
-line-height: 1.8;
-}
-
-.container {
-width: 100%;
-padding: 0 16px;
-box-sizing: border-box;
-}
-
-img {
-max-width: 100%;
-height: auto;
-}
-
-h1 {
-font-size: 30px;
-line-height: 1.4;
-}
-
-h2 {
-font-size: 24px;
-line-height: 1.5;
-}
-
-p, li {
-font-size: 15px;
-line-height: 1.9;
-}
-
-/* ヘッダー */
-.site-header {
-display: flex;
-flex-direction: column;
-align-items: center;
-gap: 18px;
-padding: 20px 16px;
-}
-
-.logo img {
-max-width: 180px;
-height: auto;
-}
-
-.main-nav {
-width: 100%;
-}
-
-.main-nav ul {
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-gap: 10px 18px;
-padding: 0;
-margin: 0;
-list-style: none;
-}
-
-.main-nav li {
-margin: 0;
-}
-
-.main-nav a {
-font-size: 13px;
-letter-spacing: 1px;
-white-space: nowrap;
-}
-
-/* 写真・カード系 */
-.grid,
-.coaching-gallery,
-.coaching-feature,
-.results-grid,
-.insta-grid {
-display: flex;
-flex-direction: column;
-gap: 20px;
-}
-
-.grid > *,
-.coaching-gallery > *,
-.coaching-feature > *,
-.results-grid > *,
-.insta-grid > * {
-width: 100%;
-max-width: 100%;
-}
-
-/* Instagram */
-.instagram-section {
-text-align: center;
-margin: 60px auto;
-}
-
-.instagram-section blockquote {
-width: 100% !important;
-min-width: auto !important;
-max-width: 100% !important;
-margin: 0 auto !important;
-}
-
-/* ボタン */
-.cta,
-.spring-button {
-display: inline-block;
-max-width: 100%;
-font-size: 14px;
-padding: 12px 20px;
-text-align: center;
-}
-}
-
+/* ---------- Eiken / Suken ---------- */
 .eiken-section {
-display: none;
+  display: none;
 }
 
-/* 数検バナー */
+.eiken-button,
+.spring-button,
+.suken-button,
+.apply-button {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.eiken-button {
+  margin-top: 10px;
+  padding: 12px 24px;
+  background: #f6c5d1;
+  color: #333;
+  border-radius: 30px;
+}
+
+.eiken-button:hover {
+  background: #e8a6b7;
+  transform: translateY(-2px);
+}
+
 .suken-banner {
-background: #e8f4ff;
-padding: 30px;
-border-radius: 20px;
-text-align: center;
-margin: 40px auto;
+  background: #e8f4ff;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  margin: 40px auto;
 }
 
 .suken-title {
-font-size: 24px;
-font-weight: bold;
-margin-bottom: 14px;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 14px;
 }
 
 .suken-deadline {
-font-size: 17px;
-line-height: 1.8;
-margin-bottom: 18px;
+  font-size: 17px;
+  line-height: 1.8;
+  margin-bottom: 18px;
 }
 
 .suken-note {
-font-size: 15px;
-color: #555;
-margin-bottom: 26px;
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 26px;
 }
 
 .suken-button {
-display: inline-block;
-background: #6bb6ff;
-color: #fff;
-padding: 16px 30px;
-border-radius: 999px;
-text-decoration: none;
+  background: #6bb6ff;
+  color: #fff;
+  padding: 16px 30px;
+  border-radius: 999px;
 }
 
 .suken-button:hover {
-background: #3b82f6;
+  background: #3b82f6;
 }
 
-/* スマホ用：ヘッダーとメニュー調整 */
+/* ---------- Spring page ---------- */
+.spring-banner {
+  max-width: 900px;
+  margin: 60px auto;
+  background: #fffaf7;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.spring-banner img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.spring-text h2 {
+  color: #b76e79;
+  margin-bottom: 10px;
+}
+
+.spring-button {
+  margin-top: 15px;
+  padding: 14px 28px;
+  background: #f4a7b9;
+  color: white;
+  border-radius: 30px;
+}
+
+.spring-button:hover {
+  background: #e889a0;
+}
+
+/* ---------- Concept page ---------- */
+.concept-intro {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 40px;
+  padding: 0 20px;
+}
+
+.concept-label {
+  font-size: 13px;
+  letter-spacing: 3px;
+  color: #999;
+  margin-bottom: 20px;
+}
+
+.concept-catch {
+  font-size: 40px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  font-weight: 500;
+}
+
+.concept-image {
+  text-align: center;
+  margin: 40px 0 60px;
+}
+
+.concept-image img {
+  width: 260px;
+  max-width: 70%;
+  border-radius: 14px;
+  opacity: 0.95;
+}
+
+.concept-body {
+  max-width: 760px;
+  margin: 0 auto 120px;
+  padding: 0 20px;
+}
+
+.concept-body p {
+  font-size: 17px;
+  line-height: 2.2;
+  margin-bottom: 28px;
+  color: #444;
+}
+
+.concept-strong {
+  max-width: 720px;
+  margin: 80px auto;
+  font-size: 22px;
+  line-height: 1.8;
+  text-align: center;
+  font-weight: 600;
+}
+
+.concept-points {
+  max-width: 900px;
+  margin: 60px auto 100px;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.concept-point {
+  flex: 1;
+}
+
+.concept-point h2 {
+  font-size: 26px;
+  margin-bottom: 30px;
+}
+
+.concept-point h3 {
+  font-size: 20px;
+  margin-bottom: 14px;
+  font-weight: 500;
+}
+
+.concept-point p {
+  font-size: 15px;
+  line-height: 2;
+  color: #555;
+}
+
+/* ---------- Coaching page ---------- */
+.coaching-hero {
+  max-width: 350px;
+  margin: 80px auto 60px;
+  padding: 0 20px;
+}
+
+.coaching-hero img {
+  width: 100%;
+  border-radius: 16px;
+}
+
+.coaching-intro {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 80px;
+  padding: 0 20px;
+}
+
+.coaching-label {
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: #999;
+  margin-bottom: 16px;
+}
+
+.coaching-catch {
+  font-size: 38px;
+  margin-bottom: 24px;
+}
+
+.coaching-text {
+  line-height: 2;
+  color: #555;
+}
+
+.coaching-features {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.feature-card {
+  text-align: center;
+}
+
+.feature-card img {
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.feature-card h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  border-bottom: none;
+}
+
+.feature-card p {
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: left;
+}
+
+/* ---------- Results ---------- */
+.results-section {
+  max-width: 1100px;
+  margin: 100px auto;
+  padding: 40px 20px;
+  background: #f8f6f2;
+}
+
+.results-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.results-label,
+.results-title,
+.results-lead,
+.results-note {
+  text-align: center;
+}
+
+.results-label {
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: #999;
+  margin-bottom: 12px;
+}
+
+.results-title {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #3f312b;
+}
+
+.results-lead {
+  font-size: 16px;
+  line-height: 2;
+  color: #666;
+  margin-bottom: 24px;
+}
+
+.results-note {
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 40px;
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.results-card {
+  background: #fff;
+  border-radius: 18px;
+  padding: 32px 30px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+}
+
+.results-card h3 {
+  font-size: 22px;
+  margin-bottom: 18px;
+  color: #4a3b34;
+  border-bottom: 1px solid #eee7df;
+  padding-bottom: 10px;
+}
+
+.results-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.results-card li {
+  font-size: 16px;
+  line-height: 2;
+  color: #555;
+}
+
+/* ---------- Instagram ---------- */
+.insta-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.insta-grid blockquote {
+  max-width: 400px;
+  width: 100%;
+}
+
+.instagram-section {
+  text-align: center;
+  margin: 60px auto;
+}
+
+/* ---------- Contact ---------- */
+.contact-wrap {
+  background: #f7f6f3;
+  padding: 80px 20px;
+  min-height: 100vh;
+}
+
+.contact-wrap h1 {
+  text-align: center;
+  font-size: 34px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.contact-wrap p,
+.contact-lead {
+  text-align: center;
+  color: #666;
+  margin-bottom: 50px;
+  line-height: 1.8;
+}
+
+.form-area {
+  max-width: 820px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+/* =========================================================
+   Mobile
+   ========================================================= */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 15px;
+    line-height: 1.8;
+    padding: 0;
+  }
+
+  .container {
+    width: 100%;
+    padding: 0 16px;
+  }
+
+  h1 {
+    font-size: 30px;
+    line-height: 1.4;
+  }
+
+  h2 {
+    font-size: 24px;
+    line-height: 1.5;
+  }
+
+  p, li {
+    font-size: 15px;
+    line-height: 1.9;
+  }
+
+  .site-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    padding: 24px 16px 32px;
+    margin-bottom: 36px;
+    position: static !important;
+    background: transparent;
+  }
+
+  .logo img {
+    width: 180px;
+    height: auto;
+  }
+
+  .main-nav {
+    width: 100%;
+    margin: 0 0 42px 0;
+    position: static !important;
+  }
+
+  .main-nav ul {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    column-gap: 24px;
+    row-gap: 22px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .main-nav a {
+    font-size: 15px;
+    letter-spacing: 1px;
+    white-space: nowrap;
+  }
+
+  .hero {
+    background: transparent;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+    margin: 0 auto 42px;
+    max-width: calc(100% - 32px);
+  }
+
+  .hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 16px;
+  }
+
+  .caption {
+    left: 16px;
+    bottom: 14px;
+    font-size: 14px;
+  }
+
+  .grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .grid figure {
+    width: 85%;
+  }
+
+  .grid figcaption {
+    writing-mode: horizontal-tb;
+    text-align: center;
+    line-height: 1.8;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .instagram-section blockquote {
+    width: 100% !important;
+    min-width: auto !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+  }
+
+  .cta,
+  .spring-button {
+    max-width: 100%;
+    font-size: 14px;
+    padding: 12px 20px;
+    text-align: center;
+  }
+
+  /* Concept mobile */
+  .concept-intro {
+    margin-top: 40px;
+    margin-bottom: 28px;
+  }
+
+  .concept-label {
+    margin-top: 20px;
+  }
+
+  .concept-catch {
+    font-size: 34px !important;
+    line-height: 1.4 !important;
+    margin: 20px auto 30px !important;
+  }
+
+  .concept-image {
+    margin: 20px 0 40px;
+  }
+
+  .concept-image img {
+    width: 85%;
+    max-width: 320px;
+  }
+
+  .concept-points {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+    margin: 20px auto 40px !important;
+    padding: 0 20px !important;
+  }
+
+  .concept-point {
+    flex: none !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto 20px !important;
+    padding: 0 20px !important;
+  }
+
+  .concept-point h3 {
+    font-size: 24px !important;
+    line-height: 1.6 !important;
+  }
+
+  .concept-point p {
+    font-size: 16px !important;
+    line-height: 1.9 !important;
+    text-align: left !important;
+  }
+
+  /* Coaching mobile */
+  .coaching-hero {
+    margin: 40px auto 40px;
+    padding: 0 20px;
+  }
+
+  .coaching-intro {
+    margin: 0 auto 50px;
+  }
+
+  .coaching-catch {
+    font-size: 30px;
+  }
+
+  .coaching-features {
+    display: flex;
+    flex-direction: column;
+    gap: 52px;
+    margin: 50px auto;
+  }
+
+  .feature-card h2 {
+    font-size: 24px;
+  }
+
+  .feature-card p {
+    font-size: 17px;
+  }
+
+  /* Results mobile */
+  .results-section {
+    padding: 70px 16px;
+    margin: 70px auto;
+  }
+
+  .results-title {
+    font-size: 28px;
+  }
+
+  .results-lead {
+    font-size: 15px;
+    margin-bottom: 40px;
+  }
+
+  .results-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .results-card {
+    padding: 24px 20px;
+  }
+
+  .results-card h3 {
+    font-size: 20px;
+  }
+
+  .results-card li {
+    font-size: 15px;
+    line-height: 1.9;
+  }
+}
+
+/* 余白を全体的に詰める */
 @media screen and (max-width: 768px) {
 
 .site-header {
-padding: 24px 16px 32px;
-margin-bottom: 24px;
+padding: 24px 16px 18px !important;
+margin-bottom: 20px !important;
 }
 
-.main-nav {
-width: 100%;
-margin-bottom: 36px;
+.concept-intro {
+margin-top: 30px !important;
+margin-bottom: 24px !important;
 }
 
-.main-nav ul {
-display: grid;
-grid-template-columns: repeat(3, auto);
-justify-content: center;
-column-gap: 24px;
-row-gap: 22px;
-padding: 0;
-margin: 0;
-list-style: none;
+.concept-label {
+margin-bottom: 24px !important;
 }
 
-.main-nav a {
-font-size: 15px;
-white-space: nowrap;
+.concept-catch {
+font-size: 34px !important;
+line-height: 1.45 !important;
+margin-top: 20px !important;
+margin-bottom: 32px !important;
 }
 
-.hero {
-margin-top: 0;
-margin-bottom: 24px;
+.concept-image {
+margin: 24px 0 40px !important;
 }
 }
-
-/* スマホ：ヒーロー画像をメニューの下へ強制的に離す */
-@media screen and (max-width: 768px) {
-
-.hero {
-padding-top: 0px !important;
-}
-
-.coaching-hero {
-padding-top: 0px !important;
-}
-
-}
-
-/* スマホ：conceptページの3列を縦並びにする */
-@media screen and (max-width: 768px) {
-
-.concept-grid,
-.concept-cards,
-.concept-three,
-.feature-grid {
-display: flex !important;
-flex-direction: column !important;
-gap: 32px;
-}
-
-.concept-grid > *,
-.concept-cards > *,
-.concept-three > *,
-.feature-grid > * {
-width: 100% !important;
-max-width: 100% !important;
-text-align: center;
-}
-
-}
-
-/* スマホ：conceptの3つの力を1列にする */
-@media screen and (max-width: 768px) {
-
-.concept-powers,
-.power-grid,
-.three-powers,
-.concept-grid {
-display: flex !important;
-flex-direction: column !important;
-gap: 36px !important;
-}
-
-.concept-powers > *,
-.power-grid > *,
-.three-powers > *,
-.concept-grid > * {
-width: 100% !important;
-max-width: 100% !important;
-text-align: center;
-}
-
-}
-
-/* スマホ：CONCEPTの3つの力を1列表示にする */
-@media screen and (max-width: 768px) {
-
-.concept-points {
-display: flex !important;
-flex-direction: column !important;
-gap: 36px !important;
-padding: 0 24px;
-}
-
-.concept-point {
-width: 100% !important;
-max-width: 100% !important;
-text-align: center;
-}
-
-.concept-point h3 {
-font-size: 24px;
-line-height: 1.6;
-margin-bottom: 16px;
-}
-
-.concept-point p {
-font-size: 16px;
-line-height: 1.9;
-text-align: left;
-}
-
-}
-
-/* スマホ：ヒーロー画像の白い枠を消す */
-@media screen and (max-width: 768px) {
-
-.hero {
-background: transparent !important;
-padding: 0 !important;
-border: none !important;
-box-shadow: none !important;
-}
-
-.hero img {
-width: 100% !important;
-height: auto !important;
-display: block;
-border-radius: 16px;
-}
-
-}
-
-/* coachingページ調整 */
-@media screen and (max-width: 768px) {
-
-.coaching-hero,
-.hero {
-margin-top: 40px !important;
-padding: 0 20px !important;
-background: transparent !important;
-box-shadow: none !important;
-border: none !important;
-}
-
-.coaching-hero img,
-.hero img {
-width: 100% !important;
-max-width: 100% !important;
-height: auto !important;
-display: block;
-margin: 0 auto;
-border-radius: 16px;
-}
-
-.grid,
-.coaching-gallery {
-display: flex !important;
-flex-direction: column !important;
-align-items: center !important;
-gap: 28px !important;
-}
-
-.grid figure,
-.coaching-gallery figure {
-width: 100% !important;
-max-width: 340px !important;
-margin: 0 auto !important;
-}
-
-.grid img,
-.coaching-gallery img {
-width: 100% !important;
-height: auto !important;
-display: block;
-border-radius: 14px;
-}
-}
-
-/* PC：coachingのメニュー下に余白 */
-.coaching-hero,
-.hero {
-margin-top: 40px;
-}
-
-/* スマホ：concept-pointsを縦並びにする */
-@media screen and (max-width: 768px) {
-.concept-points {
-display: flex !important;
-flex-direction: column !important;
-gap: 12px !important;
-margin: 20px auto 20px !important;
-padding: 0 20px !important;
-}
-
-.concept-point {
-flex: none !important;
-width: 100% !important;
-max-width: 100% !important;
-margin-bottom:20px !important; 
-}
-
-.concept-point h3 {
-font-size: 24px !important;
-line-height: 1.6 !important;
-}
-
-.concept-point p {
-font-size: 16px !important;
-line-height: 1.9 !important;
-text-align: left !important;
-}
-}
-
-.coaching-features{
-max-width:1200px;
-margin:80px auto;
-padding:0 20px;
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:40px;
-}
-
-.feature-card{
-text-align:center;
-}
-
-.feature-card img{
-width:100%;
-border-radius:20px;
-margin-bottom:20px;
-}
-
-.feature-card h2{
-font-size:28px;
-margin-bottom:20px;
-}
-
-.feature-card p{
-font-size:16px;
-line-height:1.9;
-text-align:left;
-}
-
-@media (max-width:768px){
-
-.coaching-features{
-display:flex;
-flex-direction:column;
-gap:60px;
-}
-
-.feature-card h2{
-font-size:24px;
-}
-
-.feature-card p{
-font-size:17px;
-}
-}
-
