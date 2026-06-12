@@ -1267,25 +1267,32 @@ text-align: center;
 
 }
 
-/* スマホ：conceptの3つの力を1列にする */
+/* スマホ：CONCEPTの3つの力を1列表示にする */
 @media screen and (max-width: 768px) {
 
-.concept-powers,
-.power-grid,
-.three-powers,
-.concept-grid {
+.concept-points {
 display: flex !important;
 flex-direction: column !important;
 gap: 36px !important;
+padding: 0 24px;
 }
 
-.concept-powers > *,
-.power-grid > *,
-.three-powers > *,
-.concept-grid > * {
+.concept-point {
 width: 100% !important;
 max-width: 100% !important;
 text-align: center;
+}
+
+.concept-point h3 {
+font-size: 24px;
+line-height: 1.6;
+margin-bottom: 16px;
+}
+
+.concept-point p {
+font-size: 16px;
+line-height: 1.9;
+text-align: left;
 }
 
 }
