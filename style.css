@@ -874,3 +874,32 @@ margin-bottom: 32px !important;
 margin: 24px 0 40px !important;
 }
 }
+
+/* スマホ：上部余白をさらに詰める */
+@media screen and (max-width: 768px) {
+.site-header {
+padding: 20px 16px 10px !important;
+margin-bottom: 0 !important;
+}
+
+.main-nav {
+margin-bottom: 0 !important;
+}
+
+.concept-intro {
+margin-top: 10px !important;
+margin-bottom: 20px !important;
+}
+
+.concept-label {
+margin-top: 0 !important;
+margin-bottom: 18px !important;
+}
+
+.concept-catch {
+font-size: 32px !important;
+line-height: 1.4 !important;
+margin-top: 0 !important;
+margin-bottom: 24px !important;
+}
+}
