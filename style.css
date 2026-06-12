@@ -474,9 +474,9 @@ line-height: 1.9;
 }
 
 .site-header{
-position:absolute;
-top:0;
-width:100%;
+position:relative;
+max-width:1000px;
+margin:0 auto;
 display:flex;
 justify-content:space-between;
 align-items:center;
@@ -1156,11 +1156,11 @@ margin-bottom: 24px;
 @media screen and (max-width: 768px) {
 
 .hero {
-padding-top: 90px !important;
+padding-top: 0px !important;
 }
 
 .coaching-hero {
-padding-top: 90px !important;
+padding-top: 0px !important;
 }
 
 }
@@ -1388,21 +1388,3 @@ font-size:17px;
 }
 }
 
-/* 最終上書き：スマホのメニューと画像を分離 */
-@media screen and (max-width: 768px) {
-  .site-header {
-    position: static !important;
-    margin-bottom: 36px !important;
-  }
-
-  .main-nav {
-    position: static !important;
-    margin-bottom: 42px !important;
-  }
-
-  .hero {
-    position: relative !important;
-    margin-top: 42px !important;
-    padding-top: 0 !important;
-  }
-}
