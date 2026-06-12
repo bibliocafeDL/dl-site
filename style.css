@@ -1395,3 +1395,50 @@ line-height: 1.9 !important;
 text-align: left !important;
 }
 }
+
+.coaching-features{
+max-width:1200px;
+margin:80px auto;
+padding:0 20px;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:40px;
+}
+
+.feature-card{
+text-align:center;
+}
+
+.feature-card img{
+width:100%;
+border-radius:20px;
+margin-bottom:20px;
+}
+
+.feature-card h2{
+font-size:28px;
+margin-bottom:20px;
+}
+
+.feature-card p{
+font-size:16px;
+line-height:1.9;
+text-align:left;
+}
+
+@media (max-width:768px){
+
+.coaching-features{
+display:flex;
+flex-direction:column;
+gap:60px;
+}
+
+.feature-card h2{
+font-size:24px;
+}
+
+.feature-card p{
+font-size:17px;
+}
+}
