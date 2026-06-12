@@ -1296,3 +1296,22 @@ text-align: left;
 }
 
 }
+
+/* スマホ：ヒーロー画像の白い枠を消す */
+@media screen and (max-width: 768px) {
+
+.hero {
+background: transparent !important;
+padding: 0 !important;
+border: none !important;
+box-shadow: none !important;
+}
+
+.hero img {
+width: 100% !important;
+height: auto !important;
+display: block;
+border-radius: 16px;
+}
+
+}
