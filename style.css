@@ -1367,3 +1367,31 @@ border-radius: 14px;
 .hero {
 margin-top: 40px;
 }
+
+/* スマホ：concept-pointsを縦並びにする */
+@media screen and (max-width: 768px) {
+.concept-points {
+display: flex !important;
+flex-direction: column !important;
+gap: 36px !important;
+margin: 40px auto 60px !important;
+padding: 0 28px !important;
+}
+
+.concept-point {
+flex: none !important;
+width: 100% !important;
+max-width: 100% !important;
+}
+
+.concept-point h3 {
+font-size: 24px !important;
+line-height: 1.6 !important;
+}
+
+.concept-point p {
+font-size: 16px !important;
+line-height: 1.9 !important;
+text-align: left !important;
+}
+}
