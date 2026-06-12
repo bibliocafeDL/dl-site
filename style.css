@@ -1315,3 +1315,55 @@ border-radius: 16px;
 }
 
 }
+
+/* coachingページ調整 */
+@media screen and (max-width: 768px) {
+
+.coaching-hero,
+.hero {
+margin-top: 40px !important;
+padding: 0 20px !important;
+background: transparent !important;
+box-shadow: none !important;
+border: none !important;
+}
+
+.coaching-hero img,
+.hero img {
+width: 100% !important;
+max-width: 100% !important;
+height: auto !important;
+display: block;
+margin: 0 auto;
+border-radius: 16px;
+}
+
+.grid,
+.coaching-gallery {
+display: flex !important;
+flex-direction: column !important;
+align-items: center !important;
+gap: 28px !important;
+}
+
+.grid figure,
+.coaching-gallery figure {
+width: 100% !important;
+max-width: 340px !important;
+margin: 0 auto !important;
+}
+
+.grid img,
+.coaching-gallery img {
+width: 100% !important;
+height: auto !important;
+display: block;
+border-radius: 14px;
+}
+}
+
+/* PC：coachingのメニュー下に余白 */
+.coaching-hero,
+.hero {
+margin-top: 40px;
+}
