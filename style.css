@@ -1373,15 +1373,16 @@ margin-top: 40px;
 .concept-points {
 display: flex !important;
 flex-direction: column !important;
-gap: 36px !important;
-margin: 40px auto 60px !important;
-padding: 0 28px !important;
+gap: 12px !important;
+margin: 20px auto 20px !important;
+padding: 0 20px !important;
 }
 
 .concept-point {
 flex: none !important;
 width: 100% !important;
 max-width: 100% !important;
+margin-bottom:20px !important; 
 }
 
 .concept-point h3 {
