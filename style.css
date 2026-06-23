@@ -924,3 +924,19 @@ margin-top:20px;
 color:#333;
 text-decoration:none;
 }
+
+.top-event-button{
+display:inline-block;
+margin-top:24px;
+padding:16px 34px;
+border-radius:999px;
+background:#f4c7d8;
+color:#333 !important;
+font-size:20px;
+font-weight:600;
+text-decoration:none;
+}
+
+.top-event-button:hover{
+opacity:.85;
+}
