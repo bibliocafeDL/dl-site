@@ -953,3 +953,60 @@ font-weight:bold !important;
 color:#333 !important;
 text-decoration:none !important;
 }
+
+.event-title{
+text-align:center;
+font-size:42px;
+margin-top:60px;
+}
+
+.event-date{
+text-align:center;
+color:#777;
+margin-bottom:40px;
+}
+
+.event-image{
+width:100%;
+max-width:900px;
+display:block;
+margin:0 auto 50px;
+border-radius:16px;
+}
+
+.top-event-button{
+display:inline-block;
+
+padding:20px 48px;
+
+background:#f7c8d8;
+
+border-radius:999px;
+
+font-size:28px;
+font-weight:bold;
+
+color:#333;
+
+text-decoration:none;
+
+margin:40px auto;
+
+box-shadow:0 6px 20px rgba(0,0,0,0.12);
+}
+
+.top-event-button:hover{
+transform:scale(1.05);
+}
+
+.container{
+text-align:center;
+}
+
+.container p,
+.container ul{
+text-align:left;
+max-width:900px;
+margin:auto;
+line-height:2;
+}
