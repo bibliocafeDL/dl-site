@@ -940,3 +940,16 @@ text-decoration:none;
 .top-event-button:hover{
 opacity:.85;
 }
+
+.top-event-button{
+display:inline-block !important;
+padding:20px 50px !important;
+background:#f4c7d8 !important;
+border-radius:999px !important;
+
+font-size:28px !important;
+font-weight:bold !important;
+
+color:#333 !important;
+text-decoration:none !important;
+}
