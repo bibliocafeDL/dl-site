@@ -357,7 +357,7 @@ footer h3 {
 }
 
 .concept-body p {
-  font-size: 17px;
+  font-size: 24px;
   line-height: 2.2;
   margin-bottom: 28px;
   color: #444;
@@ -387,18 +387,18 @@ footer h3 {
 }
 
 .concept-point h2 {
-  font-size: 26px;
+  font-size: 34px;
   margin-bottom: 30px;
 }
 
 .concept-point h3 {
-  font-size: 20px;
+  font-size: 26px;
   margin-bottom: 14px;
   font-weight: 500;
 }
 
 .concept-point p {
-  font-size: 15px;
+  font-size: 22px;
   line-height: 2;
   color: #555;
 }
