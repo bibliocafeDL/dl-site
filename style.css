@@ -1030,3 +1030,16 @@ display: inline-block;
 margin-top: 28px;
 }
 }
+
+.achievement-top {
+max-width: 1100px;
+margin: 30px auto;
+padding: 0 16px;
+}
+
+.achievement-top img {
+width: 100%;
+height: auto;
+display: block;
+border-radius: 12px;
+}
