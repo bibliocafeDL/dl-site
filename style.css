@@ -372,35 +372,34 @@ footer h3 {
   font-weight: 600;
 }
 
-.concept-points {
-  max-width: 900px;
-  margin: 60px auto 100px;
-  display: flex;
-  gap: 40px;
-  justify-content: center;
-  text-align: center;
-  padding: 0 20px;
-}
-
 .concept-point {
-  flex: 1;
+max-width: 900px;
+margin: 80px auto;
+padding: 0 24px;
 }
 
 .concept-point h2 {
-  font-size: 34px;
-  margin-bottom: 30px;
-}
-
-.concept-point h3 {
-  font-size: 26px;
-  margin-bottom: 14px;
-  font-weight: 500;
+text-align: center;
+font-size: 34px;
+margin-bottom: 40px;
 }
 
 .concept-point p {
-  font-size: 22px;
-  line-height: 2;
-  color: #555;
+font-size: 20px;
+line-height: 2;
+margin-bottom: 28px;
+color: #555;
+}
+
+.concept-message {
+margin: 60px auto 20px;
+padding: 28px 24px;
+text-align: center;
+font-size: 22px;
+font-weight: 600;
+line-height: 2;
+border-top: 1px solid #ccc;
+border-bottom: 1px solid #ccc;
 }
 
 /* ---------- Coaching page ---------- */
@@ -1062,4 +1061,27 @@ margin: 0 !important;
 .instagram-grid {
 grid-template-columns: 1fr;
 }
+}
+
+.site-footer {
+margin-top: 80px;
+padding: 36px 20px;
+text-align: center;
+border-top: 1px solid #ddd;
+}
+
+.site-footer a {
+text-decoration: none;
+color: inherit;
+font-size: 1rem;
+}
+
+.site-footer a:hover {
+opacity: 0.6;
+}
+
+.site-footer p {
+margin-top: 14px;
+font-size: 0.85rem;
+opacity: 0.6;
 }
