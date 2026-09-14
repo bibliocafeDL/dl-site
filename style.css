@@ -1045,14 +1045,21 @@ border-radius: 12px;
 }
 
 .instagram-grid {
-display: flex;
-gap: 20px;
-justify-content: center;
-align-items: flex-start;
-flex-wrap: wrap;
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 24px;
+align-items: start;
 }
 
 .instagram-grid .instagram-media {
 width: 100% !important;
-max-width: 430px !important;
+min-width: 0 !important;
+max-width: 100% !important;
+margin: 0 !important;
+}
+
+@media (max-width: 768px) {
+.instagram-grid {
+grid-template-columns: 1fr;
+}
 }
