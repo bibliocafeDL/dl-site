@@ -1085,3 +1085,56 @@ margin-top: 14px;
 font-size: 0.85rem;
 opacity: 0.6;
 }
+
+.concept-life {
+width: calc(100% - 48px);
+max-width: 860px;
+margin: 90px auto;
+}
+
+.concept-life h2 {
+text-align: center;
+font-size: 34px;
+margin-bottom: 45px;
+}
+
+.concept-life p {
+font-size: 18px;
+line-height: 2;
+margin: 0 auto 30px;
+}
+
+.concept-lead {
+font-size: 21px !important;
+}
+
+.concept-message {
+margin: 55px auto 0;
+padding: 30px 20px;
+text-align: center;
+font-size: 21px;
+line-height: 2;
+font-weight: 600;
+border-top: 1px solid #ccc;
+border-bottom: 1px solid #ccc;
+}
+
+@media (max-width: 768px) {
+.concept-life {
+width: calc(100% - 36px);
+margin: 60px auto;
+}
+
+.concept-life h2 {
+font-size: 26px;
+}
+
+.concept-life p {
+font-size: 16px;
+}
+
+.concept-lead,
+.concept-message {
+font-size: 18px !important;
+}
+}
