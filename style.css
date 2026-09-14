@@ -1043,3 +1043,16 @@ height: auto;
 display: block;
 border-radius: 12px;
 }
+
+.instagram-grid {
+display: flex;
+gap: 20px;
+justify-content: center;
+align-items: flex-start;
+flex-wrap: wrap;
+}
+
+.instagram-grid .instagram-media {
+width: 100% !important;
+max-width: 430px !important;
+}
